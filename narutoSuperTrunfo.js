@@ -90,10 +90,19 @@ function jogar() {
 
   if (valorCartaJogador > valorCartaMaquina) {
     elementoResultado.innerHTML = "Você venceu!";
+
+    document.getElementById("btnSortear").disabled = false;
+    document.getElementById("btnJogar").disabled = true;
   } else if (valorCartaJogador < valorCartaMaquina) {
     elementoResultado.innerHTML = "Você perdeu";
+
+    document.getElementById("btnSortear").disabled = false;
+    document.getElementById("btnJogar").disabled = true;
   } else {
     elementoResultado.innerHTML = "Empatou!";
+
+    document.getElementById("btnSortear").disabled = false;
+    document.getElementById("btnJogar").disabled = true;
   }
   exibirCartaMaquina();
 }
@@ -138,4 +147,5 @@ function exibirCartaMaquina() {
   }
   var nome = `<p class="carta-subtitle"> ${cartaMaquina.nome}</p>`;
   divCartaMaquina.innerHTML = moldura + nome + tagHTML + opcoesTexto + "</div>";
+  sortearCarta();
 }

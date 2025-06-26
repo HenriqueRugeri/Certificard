@@ -26,6 +26,7 @@ button,
   border-radius: 5px;
   border: none;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 h2 {
