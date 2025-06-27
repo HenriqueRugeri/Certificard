@@ -1,6 +1,6 @@
 var carta1 = {
   imagem:
-    "https://scontent.fbfh12-1.fna.fbcdn.net/v/t1.6435-9/42309706_282426699038214_8074346527146901504_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=cWi1DCrjyVkAX8F6YPF&_nc_ht=scontent.fbfh12-1.fna&oh=00_AT9cqgcyIlECNfxnTUmJ2fPpQVtceMOwTnAWH4Od6BLRVQ&oe=63478B1C",
+    "https://th.bing.com/th/id/OIP._CekmDNPAueKP4asy78UUAHaFb?rs=1&pid=ImgDetMain",
   nome: "Naruto",
   atributos: {
     forca: 7,
@@ -11,7 +11,7 @@ var carta1 = {
 
 var carta2 = {
   imagem:
-    "https://scontent.fbfh12-1.fna.fbcdn.net/v/t1.6435-9/93771980_2826520024130288_2634840295816036352_n.jpg?stp=cp0_dst-jpg_e15_q65_s480x480&_nc_cat=102&ccb=1-7&_nc_sid=7aed08&_nc_ohc=OqKfz-mRCy8AX_mGPxQ&_nc_ht=scontent.fbfh12-1.fna&oh=00_AT_Gg61oV04tgVhgcvkMMeGw0mMSDzkzLWLO2fDFkr74zw&oe=6349D3ED",
+    "https://th.bing.com/th/id/R.d5e3a5babf756246e5bd99296baeee36?rik=xGTQ9v3Gti99jA&riu=http%3a%2f%2fimages2.wikia.nocookie.net%2f__cb20120401210250%2fnaruto%2fpt-br%2fimages%2ff%2fff%2fSasuke.png&ehk=2fsRvmG%2f8B9JpfLL9ct4P8KZkG38HxZPvf9Bi60rdIE%3d&risl=&pid=ImgRaw&r=0",
   nome: "Sasuke",
   atributos: {
     forca: 5,
@@ -148,4 +148,5 @@ function exibirCartaMaquina() {
   var nome = `<p class="carta-subtitle"> ${cartaMaquina.nome}</p>`;
   divCartaMaquina.innerHTML = moldura + nome + tagHTML + opcoesTexto + "</div>";
   sortearCarta();
+  
 }
